@@ -75,7 +75,17 @@ a {
   width: 42%;
 }
 
-.right-half .img {
+.top-right-copyright {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  color: gray;
+  font-size: 12px;
+}
+
+.right-half img {
+  left: -36%;
+  max-width: 140%;
   text-align: right;
   position: relative;
 }
@@ -491,6 +501,12 @@ strong {
 
 .page-group-reference {
   font-size: 1.0em;
+}
+.margin-top-1em {
+  margin-top: 1em;
+}
+.margin-top-2em {
+  margin-top: 2em;
 }
 .margin-top-3em {
   margin-top: 3em;

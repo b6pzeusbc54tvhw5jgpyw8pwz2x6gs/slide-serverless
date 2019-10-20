@@ -30,10 +30,121 @@ class: page-10
 
 ---
 
+# Pets vs Cattle
+
+.left-half[
+  ![pet](./img/ramiz-dedakovic-9SWHIgu8A8k-unsplash.jpg)
+  .center[**Stateful**]
+]
+
+.right-half[
+  ![cattle](./img/james-wainscoat-DhU7XRg-Ygc-unsplash.jpg)
+  .center[**Stateless**]
+]
+
+.top-right-copyright[
+- Photo by Ramiz Dedaković on Unsplash
+- Photo by James Wainscoat on Unsplash
+]
+
+.footnote[.text[Stateful, Stateless 자원을 설명하기 위해 Pet, Cattle 비유는 자주 등장합니다]]
+
+---
+
+# Cloud and Container
+
+.margin-top-1em.center[![serverless-diagram](./img/serverless_diagram_a-1.png)]
+
+.footnote[.text[클라우드와 컨테이너의 등장은 인프라 자원을 바라보는 패러다임의 큰 변화를 주었습니다]]
+
+---
+
+# Insects?
+
+.margin-top-1em.center[![serverless-diagram](./img/shutterstock_400435891-696x464.jpg)]
+
+.footnote[.text[Pets, Cattle... 이번엔 Insects 에 대해서 알아봅시다]]
+
+---
+
+# What is the Serverless?
+
+.margin-top-1em.center[![serverless-diagram](./img/serverless_diagram_a-2.png)]
+
+.footnote[.text[Serverless 는 Stateless 했던 서버 조차 없기 때문에 컨테이너보다 자원 관리가 더 쉬워졌습니다]]
+
+---
+
+# Features of the Serverless
+- 애플리케이션 코드만 관리한다. 다음을 모두 Cloud 벤더사에서 관리한다.
+    - server and operating system maintenance
+    - high-availability
+    - capacity provisioning
+    - automatic scaling
+    - monitoring and logging
+- 언제든지 호출하면 실행이 보장된다.
+- 실행되는 동안만 과금된다.
+- EX:
+    - AWS Lambda, Google Cloud Functions, Azure Functions
+        - Another name for this is event-driven computing
+    - SNS, SES, SQS, DynamoDB
+
+.footnote[.text[대표적인 Serverless 서비스 들입니다]]
+
+---
+
+# Lambda Pricing vs EC2
+
+.margin-top-1em.center[![serverless-price](./img/price1.webp)]
+
+.footnote[.text[Serverless 는 사용한 만큼만 과금되는 방식입니다]]
+
+---
+
+# Lambda Pricing vs EC2
+
+.margin-top-1em.center[![serverless-price](./img/AWS-Lambda-pricing-2-768x431.png)]
+
+.footnote[.text[낮은 부하 상황에서는 인스턴스보다 저렴하지만]]
+
+---
+
+# Lambda Pricing vs EC2
+
+.margin-top-1em.center[![serverless-price](./img/High-Compute-Use-Case-768x431.png)]
+
+.footnote[.text[높은 부하 상황에서는 인스턴스보다 비쌉니다]]
+
+---
+
+# Lambda Pricing vs EC2
+
+.margin-top-1em.center[![serverless-price](./img/price2.png)]
+
+.footnote[.text[하지만 서버 관리 비용까지 고려하여 좀 더 많은 워크로드에 적용해 볼 수 있습니다]]
+
+---
+
+# Cold start problem
+
+.margin-top-1em.center[![serverless-price](./img/1_sUi1ffuIDGsqVU5pcyGMEw.png)]
+
+.footnote[.text[새로운 함수 실행 환경 초기화로 인한 릴레이를 Cold start 라고 합니다]]
+
+---
+
 class: page-group-reference
 
 ### References
 - https://blog.rackspace.com/pets-cattle-and-nowinsects
+- https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorial-lambda.html
+- https://www.slideshare.net/gmccance/cern-data-centre-evolution
+- https://www.plutora.com/blog/serverless
+- https://www.theregister.co.uk/2013/03/18/servers_pets_or_cattle_cern/
+- https://www.simform.com/aws-lambda-vs-ec2/
+- https://www.slideshare.net/TimWagner/serverlessconf-2018-keynote-debunking-serverless-myths-no-video-detailed-cost-analysis-version?next_slideshow=1
+- https://noti.st/jlbutler/oRJ9dz/slides
+- https://medium.com/harrythegreat/aws-lambda를-시작하기-전-알았으면-좋았을것들-788bd3b3bdd2
 
 ### This slide
 - https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/slide-serverless
