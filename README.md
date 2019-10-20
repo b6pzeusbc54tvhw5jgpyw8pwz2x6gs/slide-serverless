@@ -1,5 +1,5 @@
 # slide-serverless
-- live: https://github.com/pages/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/slide-serverless
+- live: https://b6pzeusbc54tvhw5jgpyw8pwz2x6gs.github.io/slide-serverless
 
 ## PDF export
 
